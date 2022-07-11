@@ -1,0 +1,22 @@
+[{
+    "Id_sinfo" : "567890",
+    "Nombres": "Juan",
+    "Apellidos": "Perez"
+},
+{
+    "Id_sinfo" : "999999",
+    "Nombres": "Shayla",
+    "Apellidos": "Alonzo"
+},
+{
+    "Id_sinfo" : "567890",
+    "Nombres": "Ricardo",
+    "Apellidos": "Rivera"
+},
+{
+    "Id_sinfo" : "568890",
+    "Nombres": "Junior",
+    "Apellidos": "Ccorahua"
+}
+
+]

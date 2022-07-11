@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Demo01-02</title>
+    <style>
+        .tb{
+            width:40%;
+            margin: 0 auto; 
+        }
+    </style>
+    <script>
+        function calcular(){
+            var p1 = document.getElementById("id_p1").value;
+            var p2 = document.getElementById("id_p2").value;
+            var e1 = document.getElementById("id_ex").value;
+            xprom =  parseInt(((parseInt(p1)+parseInt(p2)+parseInt(e1))/3)*10)/10;
+            
+            if (xprom>=10.6){
+                document.getElementById("id_res").value = "Aprobado";
+                document.getElementById("id_res").style="color: blue";
+            }else{
+                document.getElementById("id_res").value = "Desaprobado";
+                document.getElementById("id_res").style="color: red";
+            }
+            document.getElementById("id_prom").value = xprom;
+
+        }
+        function salir(){
+            //window.open("http://www.gmail.com","Blog")
+            window.close();
+        }
+            
+    </script>
+</head>
+<body>
+    <div class="container">
+        <head>
+            <h1>DESARRROLLO DE SOFTWARE</h1>
+        </head>
+        <table class="tb table table-responsive table-hover col-sm-12">
+            <tr>
+                <td>Práctica I</td>
+                <td><input type="number" min=0 max=20 id="id_p1" class="form-control" ></td>
+            </tr>
+            <tr>
+                <td>Práctica II</td>
+                <td><input type="text" id="id_p2" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Examen Final</td>
+                <td><input type="text" id="id_ex" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Promedio Final</td>
+                <td><input type="text" id="id_prom" value ="0.0" class="form-control" readonly disabled ></td>
+            </tr>
+            <tr>
+                <td>Resultado</td>
+                <td><input type="text" id="id_res" value ="" class="form-control" readonly disabled ></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" class="btn btn-primary btn-block" value ="Calcular" onclick="calcular();">
+                </td>
+            </tr>
+        </table>
+        <div style="float:right">
+            <input type="button" class="btn btn-primary" value ="  Salir  " onclick="salir();">
+        </div>
+    </div>
+</body>
+</html>

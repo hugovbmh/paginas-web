@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Demo01</title>
+    <script>
+        function saludo(){
+            alert("Buenos días estimados alumnos");
+        }
+        function aviso(){
+           var men = prompt("Mensaje","Ingrese mensaje");
+        
+        }
+        function confirmar(){
+            var xn = confirm("Desea grabar ?");        
+            //alert(xn);
+            if (xn == true){
+                alert ("Aceptó");
+            }else{
+                alert("No aceptó");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>APRENDIENDO JAVASCRIPT</h1> 
+        </header>
+    
+        <input type="button" class="btn btn-danger" value="Mostrar" name="Mostrar" onclick="saludo()" >
+        <input type="button" class="btn btn-danger" value="Aviso" name="Aviso" onclick="aviso()" >
+        <input type="button" class="btn btn-danger" value="Confirmar" name="Confirmar" onclick="confirmar()" >
+        <a href="http:/www.hotmail.com" class="btn btn-primary">Hotmail.com</a>
+    </div>
+</body>
+</html>
